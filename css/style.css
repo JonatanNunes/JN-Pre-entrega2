@@ -52,13 +52,13 @@ nav a{
     color: black;
 }
 
-.nav__item:hover{
-    background-color: rgba(178, 25, 25, 0.685);
-    border-radius: 3px;
+.nav__item a:hover{
+    color: red;
 }
 
-.nav__item a:hover{
-    color: white;
+.nav__item .container-icon:hover{
+    background-color: red;
+    cursor: pointer;
 }
 
 .navegacion .logo__container {
