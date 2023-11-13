@@ -417,21 +417,21 @@ body{
     font-family: italic, sans-serif;
     font-size: 30px;
     padding: 30px;
-    color: white;
-    background-color: rgb(4, 4, 81);
+    color: black;
+    background-color: rgb(203, 203, 203);
     text-align: center;
 }
 
 .contenido{
-    background-color: rgb(4, 4, 81);
+    background-color: rgb(203, 203, 203);
     color: white;
 }
-.entry-contenido{
+.contenido .entry-contenido{
     text-align:left;
     margin: auto;
     width: 50%;
-    padding: 30px;
-    background-color: rgb(4, 4, 81);
+    padding: 30px 30px;
+    background-color: grey;
 }
 
 .entry-contenido li::marker{
@@ -447,7 +447,7 @@ body{
     text-align: center;
     font-style: italic;
     font-size: 35px;
-    color: rgb(141, 16, 16);
+    color: rgb(26, 16, 141);
 }
 
 .container-icon{
@@ -561,7 +561,7 @@ body{
 }
 
 .card_container button:hover{
-    color: greenyellow;
+    color: aqua;
 }
 
 .price{
