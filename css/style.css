@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SEQUENCES";
+    src: url(../font/SEQUENCES.ttf);
+}
+
+h1 {
+    font-family: "SEQUENCES", sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Barra de navegacion */
+
+nav.navegacion {
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacion__nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 60%;
+}
+
+.navegacion__nav .nav__item {
+    margin-left: 0px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+nav a{
+    color: black;
+}
+
+.nav__item:hover{
+    background-color: rgba(178, 25, 25, 0.685);
+    border-radius: 3px;
+}
+
+.nav__item a:hover{
+    color: white;
+}
+
+.navegacion .logo__container {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 30%;
+}
+
+.logo__container .logo {
+    width: 45px;
+}
+
+.logo__container span {
+    font-size: 25px;
+    font-weight: 1200;
+    font-family:impact;
+    font-style: italic;
+}
+
+/* Fin Barra de navegacion */
+
+/* Slider principal */
+
+.slider-box{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 15s infinite alternate ease-in-out ;
+}
+
+.slider-box li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    position: relative;
+    padding: 0 0 30px;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -100%;}
+    70% {margin-left: -100%;}
+
+    75% {margin-left: -100%;}
+    100% {margin-left: -100%;}
+}
+
+
+/* Pie de pagina */
+
+.pie-de-pagina{
+    width: 100%;
+    background-color: black;
+}
+
+.pie-de-pagina .grupo-1{
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    padding: 45px 0px;
+}
+
+.pie-de-pagina .grupo-1 .box figure{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .grupo-1 .box figure img{
+    width: 100px;
+}
+
+.pie-de-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font:"Open Sans";
+}
+
+.pie-de-pagina .grupo-1 .box h3{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font:"Open Sans";
+    padding: 20px 0px 0px;
+}
+
+.pie-de-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 0px; 
+    font-size: 14px;
+    font:"Open Sans";
+    width: 250px;
+}
+
+.pie-de-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 50px;
+    height: 40px;
+    line-height: 20px;
+    color: white;
+    margin-right: 10px;
+    background-color:black;
+    transition: all 300ms ease;
+
+}
+
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color: red;
+}
+
+.pie-de-pagina .grupo-1 .medios-pago img{
+    width: 45px;
+    height: 26px;
+    display: inline-block;
+}
+
+.pie-de-pagina .grupo-1 .medios-envio img{
+    width: 45px;
+    height: 26px;
+    display: inline-block;
+}
+
+.pie-de-pagina .grupo-1 .medios-pago{
+    width: 300px;
+}
+
+.pie-de-pagina .grupo-1 .red-social{
+    width: 250px;
+}
+
+
+.pie-de-pagina .grupo-2{
+    background-color: black;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    min-height: auto;
+}
+
+.pie-de-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* Fin pie de pagina */
+
+
+/* icono whatsapp */
+.container-boton{
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 80px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+/* Fin icono whatsapp */
+
+/* --Formulario Contacto-- */
+.contacto{
+    background: rgb(203, 203, 203);
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo .titulo-contacto{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+    color: black;
+    text-align: center;
+    background: rgb(203, 203, 203);
+}
+
+.contacto .form{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0;
+    padding: 1em;
+    background-color: black;
+    font-family: 'lato';
+    font-style: italic;
+}
+
+.contacto .form .form__textarea {
+    width: 100%;
+    background-color: rgb(217, 214, 214);
+}
+
+.contacto .form .form__input, .contacto .form .form__select, .contacto .form .form__textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.form__div--button .form__input{
+    background: rgba(255, 0, 0, 0.55);
+    color:white;
+    padding: 8px 8px;
+}
+
+.form__div--button .form__input:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.contacto .mas-informacion{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 30px;
+    padding-left: 50px;
+    color: black;
+    font-size: 18px;
+}
+
+/* Fin formulario de contacto */
+
+
+/* Pagina Editoriales */
+.titulos .titulo-principal{
+    font-family:'Lato', sans-serif;
+    font-size: 30px;
+    padding: 30px;
+    color: black;
+    text-align: center;
+}
+
+.titulos .titulo-secundario{
+    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+}
+
+
+.galeria{
+    display:inline-block;
+    padding: 50px;
+
+}
+.galeria .editoriales{
+    width: 100%;
+    display: inline;
+}
+
+.galeria .img1{
+    width: 180px;
+    height: 180px;
+    display: inline;
+    padding: 20px;
+}
+.galeria .img2{
+    width: 180px;
+    height: 180px;
+    display: inline;
+    padding: 20px;
+}
+.galeria .img3{
+    width: 180px;
+    height: 180px;
+    display: inline;
+    padding: 20px;
+}
+.galeria .img4{
+    width: 180px;
+    height: 180px;
+    display: inline;
+    padding: 20px;
+}
+.galeria .img5{
+    width: 180px;
+    height: 120px;
+    display: inline;
+    padding: 20px;
+}
+.galeria .img6{
+    width: 200px;
+    height: 120px;
+    display: inline;
+    padding: 20px;
+}
+.galeria .img7{
+    width: 152px;
+    height: 200px;
+    display: inline;
+    padding: 20px;
+}
+
+.galeria .img8{
+    width: 220px;
+    height: 220px;
+    display: inline;
+    padding: 20px;
+}
+
+body{
+    background-color:rgb(203, 203, 203);
+}
+/* Fin pagina editoriales */
+
+/* Pagina como comprar */
+.entry-header .entry-titulo{
+    font-family: italic, sans-serif;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    background-color: rgb(4, 4, 81);
+    text-align: center;
+}
+
+.contenido{
+    background-color: rgb(4, 4, 81);
+    color: white;
+}
+.entry-contenido{
+    text-align:left;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+    background-color: rgb(4, 4, 81);
+}
+
+.entry-contenido li::marker{
+    color: red;
+}
+/* Fin pagina como comprar */
+
+
+/* Pagina productos */
+
+.productos header h1{
+    padding: 0 30px 55px;
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    color: rgb(141, 16, 16);
+}
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: black;
+    color: white;
+    width: 14px;
+    height: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.container-icon .icon-cart{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    stroke: black;
+}
+
+
+/* Seccion Productos */
+.productos {
+    padding: 1.5rem 4%;
+    width: 100%;
+    background-color: rgb(216, 213, 213);
+}
+
+.productos header{
+    padding: 0%;
+}
+
+.productos h1{
+    height: 0px;
+    text-align: center;
+    font-family: "Lato";
+    color:black;
+}
+
+/* Grids */
+.productos_container {
+    width: 100%;
+    padding: 1rem 4%;
+    height: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+/* Tarjetas */
+.card {
+    height: 400px;
+    width: 100%;
+    background-color: #f5f5f4;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
+}
+
+.card_img2 {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: all .5s;
+    cursor:pointer;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
+.card .card_title {
+    padding: 0 10px;
+}
+
+.card .card_titulo h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.card .card_container {
+    width: 100%;
+    padding: 10px;
+    font-size: .80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+.card_container button{
+    border: none;
+    background: none;
+    background-color: rgb(4, 4, 81);
+    color: white;
+    padding: 7px 5px;
+    cursor:pointer;
+    font-size: 15px;
+    font-family: "lato";
+    
+}
+
+.card_container button:hover{
+    color: greenyellow;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 1200px;
+    text-align: center;
+    padding: 0 10px 20px;
+}
+
+/* Fin Pagina productos */
+
+
+/* Productos Destacados */
+
+.destacados h2.titulo-linea {
+    font-style: italic;
+    font-size: 35px;
+    display: inline-block;
+    position: relative;
+    color: rgb(15, 87, 151);
+    padding: 0 0 5px;
+}
+
+.destacados{
+    text-align: center;
+}
+
+.container-destacados{
+    padding: 30px;
+}
+
+.destacados h2.titulo-linea::before, .destacados h2.titulo-linea::after{
+    content:'';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: red;
+    top: 0.6em;
+}
+
+.destacados h2.titulo-linea::before{
+    left: -140px;
+}
+
+.destacados h2.titulo-linea::after{
+    right: -140px;
+}
+
+.container-destacados{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.item-dest{
+    border-radius: 10px;
+}
+
+.item-dest:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item-dest img{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.item-dest figure{
+    overflow: hidden;
+
+}
+
+.item-dest:hover img{
+    transform: scale(1.2);
+}
+
+.info-product-dest{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio-viejo{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: line-through;
+    float:left;
+    margin: 0 0 0 50px;
+    
+}
+.precio-nuevo{
+    font-size: 15px;
+    font-weight: 700;
+    color: red;
+    margin: 0 35px 0 0;
+
+}
+
+/* Fin Productos Destacados */
+
+
+/* Responsive */
+
+@media (max-width:768px) {
+    body{
+        padding: 30px;
+    }
+
+    .slider-box{
+        width: 100%;
+    }
+
+    .navegacion label {
+        display: block;
+    }
+
+    nav.navegacion {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .container-destacados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo-linea{
+        display: none;
+    }
+    
+    .pie-de-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+        align-items: center;
+    }
+
+    .pie-de-pagina .grupo-2{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+@media (max-width:475px) {
+    .container-destacados {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

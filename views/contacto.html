@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- Animacion Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="shortcut icon" href="../assets/img/logos/icons8-lobo-4.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+    <!-- Navegacion -->
+    <nav class="navegacion">
+      <div class="logo__container">
+        <img
+          src="../assets/img/logos/icons8-hombre-lobo-100.png"
+          alt="Logotipo Lobo"
+          class="logo"
+        />
+        <span>La Guarida del Lobo</span>
+      </div>
+      <ul class="navegacion__nav">
+        <li class="nav__item active">
+          <a href="/">
+            <i class="bx bx-home"></i>
+            Inicio
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../views/productos.html">
+            <i class="bx bxl-product-hunt"></i>
+            Productos
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../views/editoriales.html">
+            <i class='bx bx-book'></i>
+            Editoriales
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../views/como-comprar.html">
+            <i class='bx bxs-cart-download'></i>
+            Cómo Comprar
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="../views/contacto.html">
+            <i class='bx bxs-contact'></i>
+            Contacto
+          </a>
+        </li>
+        <li class="nav__item">
+          <div class="container-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg>
+            
+            <div class="count-products">
+              <span id="contador-productos">0</span>
+            </div>
+        
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Formulario de contacto -->
+    <div class="titulo">
+      <h1 class="titulo-contacto">ContácteNos</h1>
+    </div>
+    
+    <section class="contacto">
+      <form class="form">
+          <div class="form__div">
+              <label for="nombre" class="form__label">Nombre</label>
+              <input type="text" name="nombre" id="nombre" class="form__input" required>
+          </div>
+
+          <div class="form__div">
+            <label for="apellido" class="form__label">Apellido</label>
+            <input type="text" name="apellido" id="apellido" class="form__input" required>
+        </div>
+
+        <div class="form__div">
+            <label for="email" class="form__label">E-mail</label>
+            <input type="email" name="email" id="email" class="form__input" required>
+        </div>
+        
+        <div class="form__div">
+          <label for="mensaje" class="form_label">Mensaje</label>
+          <textarea class="form__textarea" rows="5" cols="55" name="mensaje" placeholder="Ingrese aquí su motivo de contacto.."></textarea>
+        </div>
+
+        <div class="form__div--news">
+        <label for="aceptaNews" class="form__label">¿Desea recibir nuestras últimas promociones?</label>
+        <input type="checkbox" name="aceptanews" value="1" class="form__input">
+        </div>
+
+        <div class="form__div--button">
+          <input type="submit" value="Enviar" class="form__input">
+          <input type="reset" value="Limpiar Formulario" class="form__input">
+        </div>
+      </form>
+      <div class="mas-informacion">
+        <h4>Más Información</h4>
+        <ul>
+          <li><i class='bx bx-map'></i>Mitre 445</li>
+          <li><i class='bx bx-phone-incoming'></i>341-5698784</li>
+          <li><i class='bx bx-envelope'></i>laguaridadellobo@gmail.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pie de Pagina -->
+    <footer class="pie-de-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="../assets/img/logos/icons8-hombre-lobo-100.png" alt="Logotipo2 Lobo">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Iniciamos nuestras actividades en 2017, en Buenos Aires, Argentina.</p>
+          <p>Nos destacamos en Vender únicamente productos originales.</p>
+          <p>La mejor atención al cliente.
+            Conocemos de juegos de mesa, nosotros también jugamos.</p>
+        </div>
+        <div class="box">
+          <h2>MEDIOS DE PAGO</h2>
+          <div class="medios-pago">
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/amex.png" alt="amex"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/pagofacil.png" alt="pfacil"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/cabal.png" alt="cabal"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/maestro.png" alt="maestro"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/mercadopago.png" alt="mpago"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/visa.png" alt="visa"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/nativa.png" alt="nativa"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/naranja.png" alt="naranja"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/rapipago.png" alt="rapipago"></a>
+            <a href="#"> <img src="../assets/img/Medios_de_Pago/mastercard@2x.png" alt="mastercard"></a>
+          </div>
+          <h3>MEDIOS DE ENVíOS</h3>
+          <div class="medios-envio">
+            <a href="#"> <img src="../assets/img/Medios_envio/correo-argentino.png" alt="cargentino"></a>
+            <a href="#"> <img src="../assets/img/Medios_envio/oca.png" alt="oca"></a>
+            <a href="#"> <img src="../assets/img/Medios_envio/e-pick.png" alt="epick"></a>
+            <a href="#"> <img src="../assets/img/Medios_envio/personalizado.png" alt="epick"></a>
+          </div>
+        </div>
+        <div class="box">
+          <h2>SÍGUENOS</h2>
+          <div class="red-social">
+            <a href="#" class="bx bxl-facebook-square"></a>
+            <a href="#" class="bx bxl-instagram"></a>
+            <a href="#" class="bx bxl-twitter"></a>
+            <a href="#" class="bx bxl-youtube"></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>&copy; 2023 <b>La Guarida del Lobo</b> - Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+  </body>
