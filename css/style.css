@@ -681,8 +681,8 @@ body{
         width: 100%;
     }
 
-    .navegacion label {
-        display: block;
+    .navegacion .logo__container span{
+        display: flex;
     }
 
     nav.navegacion {
@@ -699,18 +699,23 @@ body{
     }
     
     .pie-de-pagina .grupo-1{
-        width: 90%;
+        width: 50%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
         align-items: center;
+        height: 100%;
     }
 
     .pie-de-pagina .grupo-2{
-        width: 90%;
+        width: 100%;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+
+    .productos_container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
