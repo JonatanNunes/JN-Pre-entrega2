@@ -84,7 +84,7 @@ nav a{
 
 /* Slider principal */
 
-.slider-box{
+/* .slider-box{
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -122,7 +122,7 @@ nav a{
 
     75% {margin-left: -100%;}
     100% {margin-left: -100%;}
-}
+} */
 
 
 /* Pie de pagina */
@@ -557,11 +557,12 @@ body{
     cursor:pointer;
     font-size: 15px;
     font-family: "lato";
+    background-image: linear-gradient(to right, orange, rgba(169, 17, 17, 0.779));
     
 }
 
 .card_container button:hover{
-    color: aqua;
+    color: black;
 }
 
 .price{
