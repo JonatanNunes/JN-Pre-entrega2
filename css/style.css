@@ -19,43 +19,10 @@ h1 {
 
 body {
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 /* Barra de navegacion */
-
-nav.navegacion {
-    width: 100%;
-    min-height: 60px;
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navegacion__nav {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 60%;
-}
-
-.navegacion__nav .nav__item {
-    margin-left: 0px;
-    padding: 10px;
-    font-weight: 600;
-}
-
-nav a{
-    color: black;
-}
-
-.nav__item a:hover{
-    color: red;
-}
-
 .nav__item .container-icon:hover{
     background-color: red;
     cursor: pointer;
@@ -93,50 +60,39 @@ nav a{
     padding: 8px;
 }
 
+nav.navbar.navbar-expand-lg.bg-body-tertiary{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link.active{
+    font-weight: 600;
+    color: black;
+}
+.nav-link.active:hover{
+    color: red;
+}
+
+.nav-link{
+    font-weight: 600;
+    color: black;
+    justify-content: space-between;
+
+}
+
+.nav-link:hover{
+    color: red;
+}
+
 /* Fin Barra de navegacion */
 
-/* Slider principal */
-
-.slider-box{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-
-}
-
-.slider-box ul{
-    display: flex;
-    padding: 0;
-    width: 200%;
-    animation: slide 15s infinite alternate ease-in-out ;
-}
-
-.slider-box li{
-    width: 100%;
-    height: auto;
-    list-style: none;
-    position: relative;
+.d-block.w-100{
     padding: 0 0 30px;
 }
-
-.slider-box img{
-    width: 100%;
-}
-
-@keyframes slide{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -100%;}
-    70% {margin-left: -100%;}
-
-    75% {margin-left: -100%;}
-    100% {margin-left: -100%;}
-}
-
 
 /* Pie de pagina */
 
@@ -295,6 +251,7 @@ nav a{
     color: black;
     text-align: center;
     background: rgb(203, 203, 203);
+    font-weight: bold;
 }
 
 .contacto .form{
@@ -351,12 +308,15 @@ nav a{
     padding: 30px;
     color: black;
     text-align: center;
+    font-weight: bold;
 }
 
 .titulos .titulo-secundario{
     font-size: 20px;
     text-align: center;
     font-family:cursive;
+    font-weight: bold;
+    color:  rgb(26, 16, 141);;
 }
 
 
@@ -433,6 +393,7 @@ body{
     color: black;
     background-color: rgb(203, 203, 203);
     text-align: center;
+    font-weight: bold;
 }
 
 .contenido{
@@ -461,6 +422,7 @@ body{
     font-style: italic;
     font-size: 35px;
     color: rgb(26, 16, 141);
+    font-weight: bold;
 }
 
 .container-icon{
@@ -550,6 +512,8 @@ body{
 .card .card_titulo h2{
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
+
 }
 
 .card .card_container {
@@ -565,7 +529,9 @@ body{
     font-size: 18px;
     font-weight: 1200px;
     text-align: center;
-    padding: 0 10px 20px;
+    padding: 0 10px 5px;
+    font-weight: bold;
+    color: blue;
 }
 
 
@@ -573,7 +539,7 @@ body{
     background: black;
     cursor: pointer;
     border: none;
-    padding: 10px 32px;
+    padding: 5px 0 5px;
     color: #fff;
     font-size: 15px;
     font-weight: bold;
@@ -581,34 +547,6 @@ body{
     border-radius: 12px;  
 }
 
-.card_container button::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        45deg, 
-        red, blue, deeppink,blue,
-        red, blue, deeppink,blue);
-    background-size: 800%;
-    border-radius: 10px;
-    filter:blur(8px);
-    animation: glowing 20s linear infinite;
-}
-
-@keyframes glowing{
-    0%{background-position: 0 0;
-    }
-
-    50%{background-position: 400% 0;
-    }
-
-    100%{background-position: 0 0;
-    }
-}
 
 /* Fin Pagina productos */
 
@@ -618,6 +556,7 @@ body{
 .destacados h2.titulo-linea {
     font-style: italic;
     font-size: 35px;
+    font-weight: bold;
     display: inline-block;
     position: relative;
     color: rgb(15, 87, 151);

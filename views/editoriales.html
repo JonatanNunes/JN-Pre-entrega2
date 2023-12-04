@@ -6,70 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../assets/img/logos/icons8-lobo-4.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Editoriales</title>
   </head>
   <body>
-    <nav class="navegacion">
-      <div class="logo__container">
-        <img
-          src="../assets/img/logos/icons8-hombre-lobo-100.png"
-          alt="Logotipo Lobo"
-          class="logo"
-        />
-        <span>La Guarida del Lobo</span>
-      </div>
-      <ul class="navegacion__nav">
-        <li class="nav__item active">
-          <a href="../index.html">
-            <i class="bx bx-home"></i>
-            Inicio
+    
+    <!-- Navegacion -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/img/logos/icons8-hombre-lobo-100.png"
+            alt="Logotipo Lobo"
+            class="logo"
+          />
+            <span>La Guarida del Lobo</span>
           </a>
-        </li>
-        <li class="nav__item">
-          <a href="../views/productos.html">
-            <i class="bx bxl-product-hunt"></i>
-            Productos
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="../views/editoriales.html">
-            <i class="bx bx-book"></i>
-            Editoriales
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="../views/como-comprar.html">
-            <i class='bx bxs-cart-download'></i>
-            Cómo Comprar
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="../views/contacto.html">
-            <i class='bx bxs-contact'></i>
-            Contacto
-          </a>
-        </li>
-        <li class="nav__item">
-          <div class="container-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-            </svg>
-            
-            <div class="count-products">
-              <span id="contador-productos">0</span>
-            </div>
-        
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.html"><i class="bx bx-home"></i>Inicio</a>
+            <a class="nav-link" href="../views/productos.html"><i class='bx bxl-product-hunt'></i>Productos</a>
+            <a class="nav-link" href="../views/editoriales.html"><i class="bx bx-book"></i>Editoriales</a>
+            <a class="nav-link" href="../views/como-comprar.html"><i class='bx bxs-help-circle'></i>Cómo Comprar</a>
+            <a class="nav-link" href="../views/contacto.html"><i class='bx bxs-contact'></i>Contacto</a>
+            <li class="nav__item">
+              <div class="container-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                </svg>
+                <div class="count-products">
+                  <span id="contador-productos">0</span>
+                </div>
+              </div>
+            </li>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
+
+  <!-- Fin Navegacion -->
 
     <!-- Titulo -->
     <div class="titulos">
       <h1 class="titulo-principal">Editoriales</h1>
       <h2 class="titulo-secundario">Comercializamos los productos de las siguientes editoriales:</h2>
     </div>
+
     <!-- Galeria de imagenes -->
     <div class="galeria">
       <div class="editoriales">
@@ -99,6 +87,7 @@
     </div>
     
       <!-- Pie de Pagina -->
+
       <footer class="pie-de-pagina">
         <div class="grupo-1">
           <div class="box">
@@ -110,7 +99,7 @@
           </div>
           <div class="box">
             <h2>SOBRE NOSOTROS</h2>
-            <p>Iniciamos nuestras actividades en 2017, en Buenos Aires, Argentina.</p>
+            <p>Iniciamos nuestras actividades en 2017, en Rosario, Argentina.</p>
             <p>Nos destacamos en Vender únicamente productos originales.</p>
             <p>La mejor atención al cliente.
               Conocemos de juegos de mesa, nosotros también jugamos.</p>
@@ -151,4 +140,9 @@
           <small>&copy; 2023 <b>La Guarida del Lobo</b> - Todos los derechos reservados.</small>
         </div>
       </footer>
+    <!-- Fin Pie de Pagina -->
+
+
+    <!-- js Bootstrap -->
+    <script src="../js/bootstrap.js"></script>
   </body>
