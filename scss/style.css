@@ -1,0 +1,524 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "SEQUENCES";
+  src: url(../font/SEQUENCES.ttf);
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  background-color: rgb(203, 203, 203);
+}
+
+/* Barra de navegacion */
+.navbar-brand .logo {
+  width: 45px;
+}
+.navbar-brand .logo span {
+  font-size: 25px;
+  font-weight: 1200;
+  font-family: impact;
+  font-style: italic;
+  padding: 8px;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: black;
+}
+.nav-link.active :hover {
+  color: red;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: black;
+  justify-content: space-between;
+}
+.nav-link :hover {
+  color: red;
+}
+
+.container-icon {
+  position: relative;
+}
+.container-icon .icon-cart {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  stroke: black;
+}
+
+.count-products {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  background-color: black;
+  color: white;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Fin Barra de navegacion */
+/* Carrucel */
+.d-block.w-100 {
+  padding: 0 0 30px;
+}
+
+/* Fin Carrucel */
+/* Pie de pagina */
+.pie-de-pagina {
+  width: 100%;
+  background-color: black;
+}
+.pie-de-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1000px;
+  height: 250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+  padding: 45px 0px;
+}
+.pie-de-pagina .grupo-1 .box figure {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-de-pagina .grupo-1 .box figure img {
+  width: 100px;
+}
+.pie-de-pagina .grupo-1 .box figure h2 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font: "Open Sans";
+}
+.pie-de-pagina .grupo-1 .box figure h3 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font: "Open Sans";
+  padding: 20px 0px 0px;
+}
+.pie-de-pagina .grupo-1 .box figure p {
+  color: #efefef;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font: "Open Sans";
+  width: 250px;
+}
+.pie-de-pagina .grupo-1 .red-social {
+  width: 250px;
+}
+.pie-de-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  height: 40px;
+  line-height: 20px;
+  color: white;
+  margin-right: 10px;
+  background-color: black;
+  transition: all 300ms ease;
+}
+.pie-de-pagina .grupo-1 .red-social a :hover {
+  color: red;
+}
+.pie-de-pagina .grupo-1 .medios-pago {
+  width: 300px;
+}
+.pie-de-pagina .grupo-1 .medios-pago img {
+  width: 45px;
+  height: 26px;
+  display: inline-block;
+}
+.pie-de-pagina .grupo-1 .medios-envio img {
+  width: 45px;
+  height: 26px;
+  display: inline-block;
+}
+.pie-de-pagina .grupo-2 {
+  background-color: black;
+  padding: 10px 10px;
+  text-align: center;
+  color: white;
+  min-height: auto;
+}
+.pie-de-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+/* Fin pie de pagina */
+/* icono whatsapp */
+.container-boton {
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+.container-boton :hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.container-boton .boton {
+  width: 80px;
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+/* Fin icono whatsapp */
+/* --Formulario Contacto-- */
+.contacto {
+  background: rgb(203, 203, 203);
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  justify-content: space-between;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.contacto .form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 0;
+  padding: 1em;
+  background-color: black;
+  font-family: "lato";
+  font-style: italic;
+}
+.contacto .form form__textarea {
+  width: 100%;
+  background-color: rgb(217, 214, 214);
+}
+.contacto .form .form__input, .contacto .form .form__select, .contacto .form .form__textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+}
+.contacto .form .form__div--button .form__input {
+  background: rgba(255, 0, 0, 0.55);
+  color: white;
+  padding: 8px 8px;
+}
+.contacto .form .form__div--button .form__input :hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+.contacto .mas-informacion {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 30px;
+  padding-left: 50px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.contacto .mas-informacion h4 {
+  font-weight: bold;
+}
+
+.titulo .titulo-contacto {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  padding: 30px;
+  color: black;
+  text-align: center;
+  background: rgb(203, 203, 203);
+  font-weight: bold;
+}
+
+/* Fin formulario de contacto */
+/* Pagina Editoriales */
+.titulos .titulo-principal {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  padding: 30px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+.titulos .titulo-secundario {
+  font-size: 20px;
+  text-align: center;
+  font-family: cursive;
+  font-weight: bold;
+  color: rgb(26, 16, 141);
+}
+
+.galeria {
+  display: inline-block;
+  padding: 50px;
+}
+.galeria .editoriales {
+  width: 100%;
+  display: inline;
+}
+.galeria .img1 {
+  width: 180px;
+  height: 180px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img2 {
+  width: 180px;
+  height: 180px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img3 {
+  width: 180px;
+  height: 180px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img4 {
+  width: 180px;
+  height: 180px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img5 {
+  width: 180px;
+  height: 120px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img6 {
+  width: 200px;
+  height: 120px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img7 {
+  width: 152px;
+  height: 200px;
+  display: inline;
+  padding: 20px;
+}
+.galeria .img8 {
+  width: 220px;
+  height: 220px;
+  display: inline;
+  padding: 20px;
+}
+
+/* Fin pagina editoriales */
+/* Pagina como comprar */
+.entry-header .entry-titulo {
+  font-family: italic, sans-serif;
+  font-size: 30px;
+  padding: 30px;
+  color: black;
+  background-color: rgb(203, 203, 203);
+  text-align: center;
+  font-weight: bold;
+}
+
+.como-comprar {
+  padding: 0 0 50px;
+}
+.como-comprar .form-help {
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: auto;
+  background-color: rgb(26, 16, 141);
+  color: white;
+  width: auto;
+  padding: 0 0 5px;
+}
+.como-comprar .form-help p {
+  padding: 10px 15px 0;
+}
+.como-comprar .form-help ul {
+  padding: 0 40px;
+}
+
+/* Fin pagina como comprar */
+/* Pagina productos */
+.productos {
+  padding: 1.5rem 4%;
+  width: 100%;
+  background-color: rgb(216, 213, 213);
+}
+.productos header {
+  padding: 0%;
+}
+.productos header h1 {
+  padding: 0 30px 55px;
+  text-align: center;
+  font-style: italic;
+  font-size: 35px;
+  color: rgb(26, 16, 141);
+  font-weight: bold;
+  height: 0px;
+}
+.productos .productos_container {
+  width: 100%;
+  padding: 1rem 4%;
+  height: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.productos .productos_container .card {
+  height: 400px;
+  width: 100%;
+  background-color: #f5f5f4;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
+}
+.productos .productos_container .card .card_img2 {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.productos .productos_container .card :hover img {
+  transform: scale(1.2);
+}
+.productos .productos_container .card .card_container {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.productos .productos_container .card .card_container .price {
+  font-size: 18px;
+  font-weight: 1200px;
+  text-align: center;
+  padding: 0 10px 5px;
+  font-weight: bold;
+  color: blue;
+}
+.productos .productos_container .card .card_container button {
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 5px 0 5px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+}
+.productos .productos_container .card .card_container button :hover {
+  background-color: rgba(174, 5, 5, 0.687);
+}
+.productos .productos_container .card .card_title {
+  padding: 0 10px;
+}
+.productos .productos_container .card .card_title h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Fin Pagina productos */
+/* Productos Destacados */
+.destacados {
+  text-align: center;
+}
+.destacados h2.titulo-linea {
+  font-style: italic;
+  font-size: 35px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  color: rgb(15, 87, 151);
+  padding: 0 0 5px;
+}
+.destacados h2.titulo-linea ::before, .destacados h2.titulo-linea ::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: red;
+  top: 0.6em;
+  left: -140px;
+  right: -140px;
+}
+.destacados .container-destacados {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+.destacados .container-destacados .item-dest {
+  border-radius: 10px;
+}
+.destacados .container-destacados .item-dest :hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.destacados .container-destacados .item-dest img {
+  width: 50%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.destacados .container-destacados .item-dest img :hover {
+  transform: scale(1.2);
+}
+.destacados .container-destacados .item-dest figure {
+  overflow: hidden;
+}
+.destacados .container-destacados .info-product-dest {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.destacados .container-destacados .precio-viejo {
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: line-through;
+  float: left;
+  margin: 0 0 0 50px;
+}
+.destacados .container-destacados .precio-nuevo {
+  font-size: 15px;
+  font-weight: 700;
+  color: red;
+  margin: 0 35px 0 0;
+}
+
+/* Fin Productos Destacados *//*# sourceMappingURL=style.css.map */

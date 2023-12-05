@@ -13,40 +13,12 @@
     src: url(../font/SEQUENCES.ttf);
 }
 
-h1 {
-    font-family: "SEQUENCES", sans-serif;
-}
-
 body {
     font-family: 'Lato', sans-serif;
     width: 100%;
 }
 
 /* Barra de navegacion */
-.nav__item .container-icon:hover{
-    background-color: red;
-    cursor: pointer;
-}
-
-.navegacion .logo__container {
-    padding: 0 10px;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    width: 30%;
-}
-
-.logo__container .logo {
-    width: 45px;
-}
-
-.logo__container span {
-    font-size: 25px;
-    font-weight: 1200;
-    font-family:impact;
-    font-style: italic;
-}
-
 
 .navbar-brand .logo{
     width: 45px;
@@ -81,14 +53,42 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary{
     font-weight: 600;
     color: black;
     justify-content: space-between;
-
 }
 
 .nav-link:hover{
     color: red;
 }
 
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: black;
+    color: white;
+    width: 14px;
+    height: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.container-icon .icon-cart{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    stroke: black;
+}
+
 /* Fin Barra de navegacion */
+
 
 .d-block.w-100{
     padding: 0 0 30px;
@@ -296,6 +296,11 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary{
     padding-left: 50px;
     color: black;
     font-size: 18px;
+    font-weight: bold;
+}
+
+.mas-informacion h4{
+    font-weight: bold;
 }
 
 /* Fin formulario de contacto */
@@ -396,65 +401,35 @@ body{
     font-weight: bold;
 }
 
-.contenido{
-    background-color: rgb(203, 203, 203);
+.form-help{
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    background-color: rgb(26, 16, 141);
     color: white;
-}
-.contenido .entry-contenido{
-    text-align:left;
-    margin: auto;
-    width: 50%;
-    padding: 30px 30px;
-    background-color: grey;
+    width: auto;
+    padding: 0 0 5px;
 }
 
-.entry-contenido li::marker{
-    color: red;
+.form-help p{
+    padding: 10px 15px 0;
 }
+
+.form-help ul{
+    padding: 0 40px;
+}
+
+.como-comprar{
+    padding: 0  0   50px;
+}
+
+
 /* Fin pagina como comprar */
 
 
 /* Pagina productos */
 
-.productos header h1{
-    padding: 0 30px 55px;
-    text-align: center;
-    font-style: italic;
-    font-size: 35px;
-    color: rgb(26, 16, 141);
-    font-weight: bold;
-}
-
-.container-icon{
-    position: relative;
-}
-
-.count-products{
-    position: absolute;
-    top: 55%;
-    right: 0;
-
-    background-color: black;
-    color: white;
-    width: 14px;
-    height: 14px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-
-}
-
-.container-icon .icon-cart{
-    width: 30px;
-    height: 30px;
-    display: flex;
-    stroke: black;
-}
-
-
-/* Seccion Productos */
 .productos {
     padding: 1.5rem 4%;
     width: 100%;
@@ -465,11 +440,14 @@ body{
     padding: 0%;
 }
 
-.productos h1{
-    height: 0px;
+.productos header h1{
+    padding: 0 30px 55px;
     text-align: center;
-    font-family: "Lato";
-    color:black;
+    font-style: italic;
+    font-size: 35px;
+    color: rgb(26, 16, 141);
+    font-weight: bold;
+    height: 0px;
 }
 
 /* Grids */
@@ -547,6 +525,9 @@ body{
     border-radius: 12px;  
 }
 
+.card_container button:hover{
+    background-color: rgba(174, 5, 5, 0.687);
+}
 
 /* Fin Pagina productos */
 
