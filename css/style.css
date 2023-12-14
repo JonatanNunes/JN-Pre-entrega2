@@ -89,10 +89,11 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary{
 
 /* Fin Barra de navegacion */
 
-
+/* Imagenes Principales */
 .d-block.w-100{
     padding: 0 0 30px;
 }
+/* FIN Imagenes Principales */
 
 /* Pie de pagina */
 
@@ -628,25 +629,36 @@ body{
 
 /* Fin Productos Destacados */
 
+/* Pagina Error-404 */
+.contenedor{
+    text-align: center;
+    padding: 150px;
+}
+
+.contenedor a{
+    font-size: 25px;
+    color: red;
+}
+
+.contenedor h1{
+    font-size: 100px;
+}
+
+.contenedor h2{
+    padding: 10px 0 10px;
+}
+
+.contenedor p{
+    padding: 0 0 10px;
+}
+
+/* FIN Pagina Error-404 */
 
 /* Responsive */
 
 @media (max-width:768px) {
     body{
         padding: 30px;
-    }
-
-    .slider-box{
-        width: 100%;
-    }
-
-    .navegacion .logo__container span{
-        display: flex;
-    }
-
-    nav.navegacion {
-        flex-direction: column;
-        padding: 10px 0px;
     }
 
     .container-destacados {
