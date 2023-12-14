@@ -245,7 +245,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary{
     flex-direction: column;
 }
 
-.titulo .titulo-contacto{
+.title .title-contacto{
     font-family: 'Lato', sans-serif;
     font-size: 30px;
     padding: 30px;
@@ -308,7 +308,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary{
 
 
 /* Pagina Editoriales */
-.titulos .titulo-principal{
+.title .title-principal{
     font-family:'Lato', sans-serif;
     font-size: 30px;
     padding: 30px;
@@ -317,7 +317,7 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary{
     font-weight: bold;
 }
 
-.titulos .titulo-secundario{
+.title .title-secundario{
     font-size: 20px;
     text-align: center;
     font-family:cursive;
@@ -392,7 +392,7 @@ body{
 /* Fin pagina editoriales */
 
 /* Pagina como comprar */
-.entry-header .entry-titulo{
+.entry-header .entry-title{
     font-family: italic, sans-serif;
     font-size: 30px;
     padding: 30px;
